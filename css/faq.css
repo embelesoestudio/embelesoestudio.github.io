@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+/*
+.bbh-bogle-regular {
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/*
+.abel-regular {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+/*
+.cinzel-<uniquifier> {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+/*
+.lexend-zetta-<uniquifier> {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+    color: none;
+    color-scheme:light;
+    
+}
+
+:root {
+    color-scheme: light;
+    --color-1: #10083acc;
+    --color-2: #cccfee;
+
+}
+
+body {
+    background-image: url(../assets/photo_2025-12-10_18-02-21.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100dvh;padding-bottom: .5rem;
+
+}
+
+header {
+    background-color: #10083a;
+    padding: .5rem;
+    width: 100%;
+    border-bottom: 4px solid #f3f3b1;
+}
+
+h1 {
+    font-size: 2.1rem;
+    color: var(--color-2);
+    text-align: center;
+    font-family:"Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal; 
+}
+
+main{
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.8rem;
+    font-family:"Cinzel", serif;
+    padding: .5rem;
+}
+
+section{
+    margin-inline: auto;
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+details{
+    font-size: 1.6rem;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    background-color: #10083a;
+    padding: .4rem;
+    width: 100%;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-size: 1.4rem;
+    color: aliceblue;
+    margin-top: .3rem;
+    width: 100%;
+    border-top: 2px dashed #f3f3b1;
+    padding-top: .3rem;
+}
+
+.tarjets-btn{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    z-index: 100;
+    font-size: 1rem;
+    background-color: #10083a;
+    color: #f3f3b1;
+    border: 2px solid #f3f3b1;
+    font-weight: bold;
+    padding: .2rem;
+    border-radius: 10px;
+}

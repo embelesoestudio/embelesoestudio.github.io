@@ -1,0 +1,98 @@
+
+
+form {
+    display: none;
+    width: 95%;
+    margin-inline: auto;
+    flex-direction: column;
+    padding-bottom: .5rem;
+}
+
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    padding-top: 0;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid #f3f3b1;
+}
+
+legend{
+    font-size: 1.4rem;
+    color: aliceblue;
+    padding: .2rem;
+    text-align: center;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+label {
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin-bottom: .1rem;
+    margin-top: .5rem;
+    text-wrap: wrap;
+    width: 100%;
+    font-family:"Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+}
+
+input {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: .5rem;
+    padding: .2rem;
+}
+
+select {
+    font-size: 1.4rem;
+    padding: .2rem;
+    color: black;
+    width: 100%;
+}
+
+option {
+    font-size: 1.3rem;
+    padding: .2rem;
+}
+
+#show-price {
+    color: #10083a;
+    background-color: #f3f3b1;
+    padding: .3rem;
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    margin-inline: auto;
+    border: 3px solid #10083a;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#precio-final{
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: bold;
+}  
+
+#enviar {
+    color: #f3f3b1;
+    background-color: #10083a;
+    border: 2px solid #f3f3b1;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: .9rem;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-block: .2rem;
+    border-radius: 10px;
+}

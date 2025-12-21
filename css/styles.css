@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+/*
+.bbh-bogle-regular {
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/*
+.abel-regular {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+/*
+.cinzel-<uniquifier> {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+/*
+.lexend-zetta-<uniquifier> {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+    color: none;
+    color-scheme:light;
+    
+}
+
+:root {
+    color-scheme: light;
+    --color-1: #10083acc;
+    --color-2: #cccfee;
+
+}
+
+body {
+    background-image: url(../assets/photo_2025-12-10_18-02-21.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    width: 100%;
+}
+
+header {
+    background-color: #10083a;
+    padding: .5rem;
+    width: 100%;
+    border-bottom: 4px solid #f3f3b1;
+}
+
+h1 {
+    font-size: 2.1rem;
+    color: var(--color-2);
+    text-align: center;
+    font-family:"Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal; 
+}
+
+main {
+    width: 100%;
+    margin-top: .6rem;
+}
+
+.cards-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    gap: 1.0rem;
+    padding-bottom: .8rem;
+
+}
+
+.card{
+    width: 100%;
+    background-color: #10083a9b;
+    border: 2px solid #10083a;
+    border-radius: 15px;
+    padding-inline: 0;
+    padding-bottom: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f3f3b1;
+    transition: 1s ease;
+}
+
+.card-title{
+    font-size: 2.2rem;
+    color: aliceblue;
+    text-align: center;
+    font-family:"Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal; 
+    
+}
+
+.card-price {
+    font-size: 1.6rem;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: aliceblue;
+}
+
+.card-subtitle{
+    font-size: 1.2rem;
+    padding: .3rem;
+    background-color: #f3f3b1 !important;
+    margin-top: .5rem;
+    color: #10083a !important;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+
+}
+
+.card-nums {
+    font-weight: bold;
+}
+
+.card-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: .8rem;
+    align-items: center;
+    
+}
+
+.card-items-description{
+    width: 70%;
+}
+
+.card-items-number{
+    width: 30%;
+}
+
+.number {
+    font-weight: bold;
+    text-align: center;
+    color: #cccfee;
+    font-size: 1.2rem;
+
+}
+
+.description {
+    color:#cccfee ;
+    text-align: center;
+    font-family:"Cinzel", serif;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+}
+
+.card-btn{
+    margin-top: 1rem;
+    color: #10083a !important;
+    background-color: #cccfee !important;
+    font-weight: bold;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    border: 2px solid #10083a;
+    font-size: .9rem;
+    padding: .3rem;
+    border-radius: 5px;
+}
+
+.card-optional-items{
+    width: 100%;
+}
+
+.card-ul {
+    padding-inline: 2rem;
+    margin-top: .2rem;
+}
+
+.card-li{
+    padding-block: .5rem;
+    color: #f3f3b1;
+    font-size: 1.2rem;
+    font-family:"Cinzel", serif;
+}
+
+.card-resalt-word{
+    font-weight: bold;
+}
+
+.card-imp{
+    box-shadow: 0 0 20px 5px rgba(255,215,0,0.8);
+}
+
+.ocultar {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animacion {
+    transition: 1s ease;
+    animation-name: palpitarBorde;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.faq-btn{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    z-index: 100;
+    font-size: 1rem;
+    background-color: #10083a;
+    color: #f3f3b1;
+    border: 2px solid #f3f3b1;
+    font-weight: bold;
+    padding: .2rem;
+    border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark){
+    .card-btn{
+        color: #10083a !important;
+        background-color: #cccfee !important; ;
+    }
+    .card-subtitle{
+        background-color: #f3f3b1 !important;
+        color: #10083a !important;
+    }
+}
+
+@keyframes palpitarBorde {
+    from {
+        box-shadow: 0 0 30px 10px rgba(255,215,0,0.8);
+    } to {
+        box-shadow: 0 0 20px 5px rgba(255,215,0,0.0);
+    }
+}
+
+
+
+@media (width > 900px) {
+    .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card {
+        width: 40%;
+    }
+    body {
+        background-size:cover;
+        background-repeat: no-repeat;
+        
+    }
+}
